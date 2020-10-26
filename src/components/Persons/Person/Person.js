@@ -1,15 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './Person.css';
 
 const person = ( props ) => {
-    const style = {
-      '@media(min-width: 500px)' : {
-        width: '450px'
-      }
-    };
-
+    console.log('[Person.js] rendering...')
     return (
-      <div className={classes.Person} style={style}>
+      <div className={classes.Person}>
         <p onClick = {props.click} >
           I'm {props.name} and I am {props.age} Years Old!
         </p>
