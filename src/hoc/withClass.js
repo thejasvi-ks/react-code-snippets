@@ -7,7 +7,7 @@ import React from "react";
 const withClass = (WrappedComponent, className) => { // normal JS Function. which returns a functional component
   return (props) => (
     <div className={className}>
-      <WrappedComponent />
+      <WrappedComponent { ...props } />
     </div>
   );
 };
